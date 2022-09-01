@@ -1,12 +1,12 @@
 These are the shell permissions that we shall use for the Linux programming bash.
 
 # Basic commands
-***chmod***  - modify the file access rights
-***su***     - temporarily become the super user
-***sudo***   - temporarily become a super user
-***chown***  - change file ownership
-***chgrp***  - change a file's group ownership
-***whoami*** - Who is the current super user
+1. ***chmod***  - modify the file access rights
+2. ***su***     - temporarily become the super user
+3. ***sudo***   - temporarily become a super user
+4. ***chown***  - change file ownership
+5. ***chgrp***  - change a file's group ownership
+6. ***whoami*** - Who is the current super user
 
 ***To see teh permissions of a specific file***
 we use `ls -l`
