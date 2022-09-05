@@ -23,3 +23,4 @@ we use `ls -l`
 - **700** - Only the owner can have the full rights
 - **755** - Owner has full access. Other users can list  but cannot delete or create.
 - **777** - No restrictions.
+
