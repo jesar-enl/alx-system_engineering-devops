@@ -37,10 +37,12 @@ The script file contains a maximum 64 characters
 [13-print_float](./13-print_float) - Creates a script that prints a number with two decimal places.
 The number will be stored in the environment variable NUM.
 
-[14-decimal_to_hexadecimal](./14-decimal_to_hexadecimal) - Creates a script that converts a number from base 10 to base 16.
+[100-decimal_to_hexadecimal](./100-decimal_to_hexadecimal) - Creates a script that converts a number from base 10 to base 16.
 The number in base 10 is stored in the environment variable DECIMAL
 The script displays the number in base 16, followed by a new line
 
-[100-rot13](./101-rot13) - Creates a script that encodes and decodes text using the rot13 encryption.
+[101-rot13](./101-rot13) - Creates a script that encodes and decodes text using the rot13 encryption.
 
-[101-odd](./101-odd) - Write a script that prints every other line from the input, starting with the first line.
+[102-odd](./102-odd) - Writes a script that prints every other line from the input, starting with the first line.
+
+[103-water_and_stir](./103-water_and_stir) - Writse a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
