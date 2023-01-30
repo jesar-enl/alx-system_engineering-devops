@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# program to print 12 hour clock till 59 minutes
+
+hr=0
+while (( $hr <= 12 ))
+do
+	echo "Hour: $hr"
+	min=1
+	while (( $min < 60 ))
+	do
+		echo $min
+		(( min++ ))
+	done
+	(( hr++ ))
+done

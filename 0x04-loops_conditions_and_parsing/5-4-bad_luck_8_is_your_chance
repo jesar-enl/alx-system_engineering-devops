@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Print 'bad luck' at line 4, 'good luck' at line 8
+# and 'Best School' for the rest
+
+c=0
+while (( $c < 10 ))
+do
+	if (( $c == 3 ))
+	then
+		echo "bad luck"
+	elif (( $c == 7 ))
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	(( c++ ))
+done

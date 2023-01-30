@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# print bad luck messages from China, Japan, and I taly
+
+c=1
+while (( $c <= 20 ))
+do
+	case $c in
+		4 )
+			echo $c
+			echo "bad luck from China"
+			;;
+		9 )
+			echo $c
+			echo "bad luck from Japan"
+			;;
+		17 )
+			echo $c
+			echo "bad luck from Italy"
+			;;
+		* )
+			echo $c
+	esac
+	(( c++ ))
+done

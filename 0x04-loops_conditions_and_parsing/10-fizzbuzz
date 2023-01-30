@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# print "fizz" if multiple of 3, "buzz" if multiple of 5,
+# "fizzbuzz" if multiple of both
+
+for c in {1..100}
+do
+	if (( $(( c%3 )) == 0 )) && (( $(( c%5 )) == 0 ))
+	then
+		echo "FizzBuzz"
+	elif (( $(( c%3 )) == 0 ))
+	then
+		echo "Fizz"
+	elif (( $(( c%5 )) == 0 ))
+	then
+		echo "Buzz"
+	else
+		echo "$c"
+	fi
+done

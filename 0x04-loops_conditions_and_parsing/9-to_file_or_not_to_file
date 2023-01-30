@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# check whteher a file or directory is present adn not empty or empty
+
+f_name="school"
+if [ -e $f_name ]
+then
+	echo "$f_name file exists"
+	if [ -s $f_name ]
+	then
+		echo "$f_name file is not empty"
+	else
+		echo "$f_name file is empty"
+	fi
+
+	if [ -f $f_name ]
+	then
+		echo "$f_name is a regular file"
+	fi
+else
+	echo "$f_name file does not exist"
+fi
