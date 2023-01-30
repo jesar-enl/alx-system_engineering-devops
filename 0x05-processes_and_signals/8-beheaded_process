@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Kill the process
+
+process="7-highlander"
+pgrep -f $process | xargs kill -9

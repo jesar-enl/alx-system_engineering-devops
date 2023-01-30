@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Print 'To infinity and beyond' while interrupting the process
+# with 'I am invincible!!!' when called.
+
+trap "echo I am invincible!!!" 15
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
