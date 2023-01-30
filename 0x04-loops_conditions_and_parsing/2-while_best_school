@@ -2,7 +2,7 @@
 # Prints 'Best School' to the screen 10 times
 
 count=0
-while (( $count<10 ))
+while (( count<10 ))
 do
 	echo "Best School"
 	(( count++ ))

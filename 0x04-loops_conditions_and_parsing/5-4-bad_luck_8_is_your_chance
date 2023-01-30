@@ -3,12 +3,12 @@
 # and 'Best School' for the rest
 
 c=0
-while (( $c < 10 ))
+while (( c < 10 ))
 do
-	if (( $c == 3 ))
+	if (( c == 3 ))
 	then
 		echo "bad luck"
-	elif (( $c == 7 ))
+	elif (( c == 7 ))
 	then
 		echo "good luck"
 	else

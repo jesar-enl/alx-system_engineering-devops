@@ -2,7 +2,7 @@
 # print bad luck messages from China, Japan, and I taly
 
 c=1
-while (( $c <= 20 ))
+while (( c <= 20 ))
 do
 	case $c in
 		4 )
