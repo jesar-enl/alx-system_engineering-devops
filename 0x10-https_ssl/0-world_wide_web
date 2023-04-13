@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # get the information about a specific subdomain for our website.
 
-print_domain_info() {
-	record_type=$(dig "$2.$1" | grep -A1 ';; ANSWER SECTION:' | awk '{printf "%s", $4}')
-	ip=$(dig "$2.$1" | grep -A1 ';; ANSWER SECTION:' | awk '{printf "%s", $5}')
-	printf "The subdomain %s is a %s record and points to %s\n" "$2" "$record_type" "$ip"
-}
-
-if [ -z "$2" ]
-then
-	for sub in "www" "lb-01" "web-01" "web-02"
-	do
-		print_domain_info "$1" "$sub"
-	done
+if [ $# -eq 2 ]; then
+  subdomain=$2
 else
-	print_domain_info "$1" "$2"
+  subdomain="www lb-01 web-01 web-02"
 fi
+
+# loop through each subdomain and display its DNS record
+for sub in $subdomain; do
+  record=$(dig +short $sub.$1)
+  if [ -n "$record" ]; then
+    echo "The subdomain $sub is an A record and points to $record"
+  else
+    echo "The subdomain $sub does not have a DNS record"
+  fi
+done
