@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-Get a randomly created to-do list from an API
+created on Tue Apr 25 09:13 2022
+
+
+Fetch a randomly created to-do list from an API
 """
 
 
