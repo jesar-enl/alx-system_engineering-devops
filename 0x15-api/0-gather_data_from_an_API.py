@@ -5,7 +5,6 @@ Get a randomly created to-do list from an API
 
 
 import requests
-import json
 from sys import argv
 
 
