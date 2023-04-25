@@ -1,10 +1,6 @@
 #!/usr/bin/python3
+""" Fetches Employee data from an API and displays on the page.
 """
-Fetch employee data from an REST API,
-an save the information in a CSV file.
-"""
-
-
 import csv
 import requests
 from sys import argv
