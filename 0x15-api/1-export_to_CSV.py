@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Fetch employee data from an API"""
+"""Fetch employee data from an REST API,
+an save the information in a CSV file."""
 import csv
 import requests
 from sys import argv
